@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+            height: 100vh;
+            background-image: linear-gradient(rgb(68,23,23) 30%,white,rgb(63,23,23));
+        }
+        .brand-title{
+            font-size: 50px;
+            font-weight: bold;
+            color: red;
+            font-family: 'Arial';
+            text-shadow: 1px 1px 1px white;
+        }  
+        .btn-language{
+            color: white;
+            width: 100px;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 30px;
+            background-color: rgba(74, 23, 23, 0.6);
+            font-family: Arial;
+        } 
+        .btn-signin{
+            background-color: white;
+            padding: 10px;
+            width: 80px;
+            border-radius: 30px;
+            font-family: Arial;
+            text-align: center;
+            margin-left: 20px;
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .header-right-column{
+            display: flex;
+            flex-direction: row;        
+            text-align: center;
+        }
+        section{
+            background-image: url("./public/images/Netflix-banner.jpg");
+            height: 500px;
+            background-size: cover;
+            margin: 5px 30px 5px 30px;
+            border-radius: 20px;
+            border:1px solid white;
+        }
+        .bg-shade{
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 100%;
+            width: 100%;
+            border-radius: 20px;        
+        }
+        main{
+            font-family: Arial;
+            color: white;
+            text-align: center;
+            padding-top: 80px;
+        }
+        .main-title{
+            font-size: 50px;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px white;
+        }
+        .main-subtitle{
+            padding-top: 20px;
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+        .register-title{
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+        .email{
+            background-color: rgba(46, 40, 40, 0.6);
+            color:white;
+            font-size: 20px;
+            width: 300px;
+            padding:20px;
+            border-radius: 30px;
+            margin-right: 10px;
+            text-align: left;
+        }
+        .form{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .btn-start{
+            background-color: red;
+            color: white;
+            font-size: 20px;
+            width: 200px;
+            padding: 20px;
+            border-radius: 30px;
+            margin-left: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <span class="brand-title">NETFLIX</span>
+        </div>
+        <div class="header-right-column">
+            <div class="btn-language">
+                <span class="bi bi-translate"></span>
+                <span>English</span>
+                <span class="bi bi-caret-down-fill"></span>
+            </div>
+            <div class="btn-signin">
+                <span>Sign in</span>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="bg-shade">
+            <main>
+                <div class="main-title">Unlimited movies, TV<br> shows and more</div>
+                <div class="main-subtitle">Starts at ₹149. Cancel at any time.</div>
+                <div class="register-title">Ready to watch? Enter your email to create or restart your membership.</div>
+                <div>
+                    <div class="form">
+                    <div class="email">Email Address</div>
+                    <div class="btn-start">Get Started<span class="bi bi-chevron-right"></span></div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+</body>
+</html>
